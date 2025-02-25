@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="theme-toggle">
+      <button id="themeToggle">🌓 Toggle Theme</button>
+    </div>
+    <div id="app" class="dashboard">
+      <h1>Space Weather Dashboard</h1>
+      
+      <div class="dashboard-grid">
+        <div class="card">
+          <h2>Solar Wind</h2>
+          <div id="solarWind" class="data-display">
+            <div class="parameter">
+              <span>Speed:</span>
+              <span id="windSpeed">Loading...</span>
+            </div>
+            <div class="parameter">
+              <span>Density:</span>
+              <span id="windDensity">Loading...</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Geomagnetic Field</h2>
+          <div id="geomagneticField" class="data-display">
+            <div class="parameter">
+              <span>Kp Index:</span>
+              <span id="kpIndex">Loading...</span>
+            </div>
+            <div class="parameter">
+              <span>Status:</span>
+              <span id="geoStatus">Loading...</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Solar Flares</h2>
+          <div id="solarFlares" class="data-display">
+            <div class="parameter">
+              <span>Current Class:</span>
+              <span id="flareClass">Loading...</span>
+            </div>
+            <div class="parameter">
+              <span>Last 24h:</span>
+              <span id="flareCount">Loading...</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Aurora Forecast</h2>
+          <div id="auroraForecast" class="data-display">
+            <div class="parameter">
+              <span>Visibility:</span>
+              <span id="auroraVisibility">Loading...</span>
+            </div>
+            <div class="parameter">
+              <span>Power:</span>
+              <span id="auroraPower">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="last-updated">
+        Last Updated: <span id="lastUpdated">Never</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
